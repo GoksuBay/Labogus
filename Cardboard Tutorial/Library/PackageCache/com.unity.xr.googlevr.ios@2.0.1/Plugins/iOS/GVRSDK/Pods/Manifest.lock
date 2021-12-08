@@ -1,0 +1,26 @@
+PODS:
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/Logger (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GTMSessionFetcher/Core (1.2.0)
+  - GVRSDK (1.170.0):
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - GTMSessionFetcher/Core (~> 1.1)
+
+DEPENDENCIES:
+  - GVRSDK (~> 1.170)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
+    - GVRSDK
+
+SPEC CHECKSUMS:
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  GVRSDK: 690e9ca3e4d6161b84ff25519447ed2f53e0eb0b
+
+PODFILE CHECKSUM: b78629405cbe20f58df861b6ef51d88eebf12a11
+
+COCOAPODS: 1.5.3
