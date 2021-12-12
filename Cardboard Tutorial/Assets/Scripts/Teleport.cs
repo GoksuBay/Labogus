@@ -8,7 +8,7 @@ public class Teleport : MonoBehaviour
 
     public void TeleportPlayer()
     {
-        player.transform.position = new Vector3(transform.position.x, transform.position.y + 1.5f, transform.position.z);
+        player.transform.position = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);
     
     }
 }
