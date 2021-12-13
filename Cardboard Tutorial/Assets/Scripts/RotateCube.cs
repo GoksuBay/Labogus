@@ -5,9 +5,13 @@ using UnityEngine;
 public class RotateCube : MonoBehaviour
 {
     public GameObject player;
+    [SerializeField] public float xDist, yDist, zDist;
+    [SerializeField] public float xAngle, yAngle, zAngle;
+
 
     public void ChangeSpin() 
     {
-        player.transform.Rotate(0f, 350 * Time.deltaTime, 0f);
+        player.transform.Translate(xDist, yDist, zDist);
+        player.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
     }
 }
