@@ -43,6 +43,12 @@ public class VRGaze : MonoBehaviour
                 _hit.transform.gameObject.GetComponent<RotateCube>().ChangeSpin();
                 gvrStatus = false;
             }
+
+            if(imgGaze.fillAmount == 1 && _hit.transform.CompareTag("DoluSise") && gvrStatus)
+            {
+                _hit.transform.gameObject.GetComponent<DoluSise>().KaldirDok();
+                gvrStatus = false;
+            }
         }
     }
 
