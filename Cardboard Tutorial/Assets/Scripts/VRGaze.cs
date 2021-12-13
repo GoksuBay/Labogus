@@ -44,9 +44,9 @@ public class VRGaze : MonoBehaviour
                 gvrStatus = false;
             }
 
-            if(imgGaze.fillAmount == 1 && _hit.transform.CompareTag("DoluSise") && gvrStatus)
+            if(imgGaze.fillAmount == 1 && _hit.transform.CompareTag("Obje") && gvrStatus)
             {
-                _hit.transform.gameObject.GetComponent<DoluSise>().KaldirDok();
+                _hit.transform.gameObject.GetComponent<ObjectTransform>().ObjTransform();
                 gvrStatus = false;
             }
         }

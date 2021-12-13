@@ -6,8 +6,7 @@ TagManager:
   tags:
   - Teleport
   - RotateCube
-  - DoluSise
-  - BosSise
+  - Obje
   layers:
   - Default
   - TransparentFX
