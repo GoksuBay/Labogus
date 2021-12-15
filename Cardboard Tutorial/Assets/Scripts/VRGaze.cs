@@ -49,6 +49,12 @@ public class VRGaze : MonoBehaviour
                 _hit.transform.gameObject.GetComponent<ObjectTransform>().ObjTransform();
                 gvrStatus = false;
             }
+
+            if(imgGaze.fillAmount == 1 && _hit.transform.CompareTag("Beher") && gvrStatus)
+            {
+                _hit.transform.gameObject.GetComponent<BeherBosalt>().BeheriBosalt();
+                gvrStatus = false;
+            }
         }
     }
 
