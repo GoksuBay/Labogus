@@ -17,7 +17,7 @@ public class VRGaze : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        totalTime = 0.75f;   
+        totalTime = 1.0f;   
     }
 
     // Update is called once per frame
@@ -53,6 +53,12 @@ public class VRGaze : MonoBehaviour
             if(imgGaze.fillAmount == 1 && _hit.transform.CompareTag("Beher") && gvrStatus)
             {
                 _hit.transform.gameObject.GetComponent<BeherBosalt>().BeheriBosalt();
+                gvrStatus = false;
+            }
+
+            if(imgGaze.fillAmount == 1 && _hit.transform.CompareTag("Lerp") && gvrStatus)
+            {
+                _hit.transform.gameObject.GetComponent<AllLerpTestClass>().Update();
                 gvrStatus = false;
             }
         }
