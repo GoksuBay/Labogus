@@ -12,7 +12,8 @@ public class AllLerpTestClass : MonoBehaviour
     [SerializeField] public float totalTime = 2;
 
     [SerializeField] private Transform startTransform = null, endTransform = null;
-    
+     private bool flag = false;
+
     //lerpValue = 0 olduğunda başlangıç pozisyonu, lerpValue = 1 olduğunda bitiş pozisyonu oluyor.
     [SerializeField] [Range(0f, 1f)] private float lerpValue = 0;
 
@@ -27,10 +28,12 @@ public class AllLerpTestClass : MonoBehaviour
 
     public void Update()
     {
+
+    if (flag == true){
         transform.position = Vector3.Lerp(startTransform.position, endTransform.position, lerpValue);
         transform.rotation = Quaternion.Lerp(startTransform.rotation, endTransform.rotation, lerpValue);
         transform.localScale = Vector3.Lerp(startTransform.localScale, endTransform.localScale, lerpValue);
-        
+
         _meshRenderer.material.color = Color.Lerp(_startObjectMeshRenderer.material.color, _endObjectMeshRenderer.material.color, lerpValue);
 
 
@@ -45,7 +48,20 @@ public class AllLerpTestClass : MonoBehaviour
         {
             timer = 100;
         }
-       
-    
+
+    if(timer >= 100)
+    {
+        flag = false;
     }
 }
+    }
+
+    public void Lerper()
+    {
+        flag = true;
+
+
+    }
+
+
+    }
