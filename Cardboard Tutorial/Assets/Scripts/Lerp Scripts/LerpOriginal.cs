@@ -48,11 +48,6 @@ public class LerpOriginal : MonoBehaviour
             lerpValue = timer/totalTime;
         }
 
-        else if (lerpValue >= 1 && !checkAnimation){
-            lerpValue = 0;
-            timer = 0;
-            checkAnimation = true;
-        }
         else
         {
             timer = 100;

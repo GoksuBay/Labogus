@@ -73,6 +73,12 @@ public class VRGaze : MonoBehaviour
                 _hit.transform.gameObject.GetComponent<LerpOriginal>().Lerper();
                 gvrStatus = false;
             }
+            if(imgGaze.fillAmount == 1 && _hit.transform.CompareTag("Beherbalon") && gvrStatus)
+            {
+                _hit.transform.gameObject.GetComponent<LerpBalon>().Lerper();
+                gvrStatus = false;
+            }
+
         }
     }
 

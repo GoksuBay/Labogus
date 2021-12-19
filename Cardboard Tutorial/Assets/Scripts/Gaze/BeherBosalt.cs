@@ -7,11 +7,6 @@ public class BeherBosalt : MonoBehaviour
     public Material[] material;
     public GameObject icerik;
     public GameObject degisenIcerik;
-    void Start()
-    {
-        //GetComponent<Renderer>().material = material[0];
-        icerik.GetComponent<Renderer>().material = material[0];
-    }
 
     public void BeheriBosalt()
     {
@@ -19,7 +14,7 @@ public class BeherBosalt : MonoBehaviour
         //GetComponent<Renderer>().material = material[1];
         icerik.GetComponent<Renderer>().material = material[1];
         
-        degisenIcerik.GetComponent<Renderer>().material = material[1];
+        degisenIcerik.GetComponent<Renderer>().material = material[0];
         
     }
 }

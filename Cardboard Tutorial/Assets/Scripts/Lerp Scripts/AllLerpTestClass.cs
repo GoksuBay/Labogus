@@ -8,7 +8,7 @@ public class AllLerpTestClass : MonoBehaviour
     [SerializeField] float timer;
 
     //Transform, yani animasyon tamamlanma süresi totalTime oluyor.
-    [SerializeField] public float totalTime = 2;
+    [SerializeField] public float totalTime = 1;
 
     [SerializeField] private Transform startTransform = null, endTransform = null;
      private bool flag = false;
@@ -57,6 +57,7 @@ public class AllLerpTestClass : MonoBehaviour
             lerpValue = 0;
             timer = 0;
             checkAnimation = true;
+            GetComponent<BeherBosalt>().BeheriBosalt();
         }
         else
         {
@@ -66,7 +67,6 @@ public class AllLerpTestClass : MonoBehaviour
     if(timer >=100)
     {
         flag = false;
-        
     }
 }
     }
