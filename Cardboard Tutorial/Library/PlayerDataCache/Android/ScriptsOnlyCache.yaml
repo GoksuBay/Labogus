@@ -1,15 +1,15 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - ChangeColor
+    - AllLerpTestClass
+    - BeherBosalt
+    - ChangeScene
     - GvrEditorEmulator
-    - GvrPointerGraphicRaycaster
     - GvrPointerInputModule
     - GvrPointerPhysicsRaycaster
     - GvrReticlePointer
-    - RotateCube
-    - Teleport
-    - VRButton
+    - LerpBalon
+    - LerpOriginal
     - VRGaze
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -26,12 +26,10 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
-    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.Image
-    - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/labimportsonrasi.unity:
+    Assets/Scenes/deney2.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -58,7 +56,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
-    - Class: 95
+    - Class: 102
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -69,36 +67,34 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11540}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11546}
     - Class: 114
-      Script: {instanceID: 11574}
+      Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 12140}
+      Script: {instanceID: 11936}
     - Class: 114
-      Script: {instanceID: 12468}
+      Script: {instanceID: 12088}
     - Class: 114
-      Script: {instanceID: 12996}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 13382}
+      Script: {instanceID: 13736}
     - Class: 114
-      Script: {instanceID: 13504}
+      Script: {instanceID: 13856}
     - Class: 114
-      Script: {instanceID: 13518}
+      Script: {instanceID: 13916}
     - Class: 114
-      Script: {instanceID: 13674}
+      Script: {instanceID: 14112}
     - Class: 114
-      Script: {instanceID: 13852}
+      Script: {instanceID: 14132}
     - Class: 114
-      Script: {instanceID: 14048}
+      Script: {instanceID: 14252}
     - Class: 114
-      Script: {instanceID: 14172}
-    - Class: 114
-      Script: {instanceID: 14380}
-    - Class: 114
-      Script: {instanceID: 14416}
+      Script: {instanceID: 14448}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -121,6 +117,12 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
+      Hash: cc4274b586df3c02688bac01b88bd16c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventSystem
+  - hash:
+      serializedVersion: 2
       Hash: aeb62f729c52c814dec86c47dcac1471
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -131,6 +133,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -167,12 +175,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioPlayableAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GazeAnimate
   - hash:
       serializedVersion: 2
       Hash: b4fc42b020df4b67385e61ff21d513cc
@@ -235,6 +237,12 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: 658e0215602acf474302b12bad5ad617
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BeherBosalt
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -257,6 +265,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: e6bb8168cccffdd64029eccc8b4cf9b7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AllLerpTestClass
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -377,12 +391,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
-  - hash:
-      serializedVersion: 2
-      Hash: cc4274b586df3c02688bac01b88bd16c
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: EventSystem
   - hash:
       serializedVersion: 2
       Hash: 0fb27be807aa299702f28ad0bcad1f46
@@ -541,7 +549,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 83e769eee07fc231384c812eedbb8224
+      Hash: a16083c902e67c1581216ba78fb07438
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RotateCube
@@ -575,6 +583,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GvrControllerTooltipsSimple
+  - hash:
+      serializedVersion: 2
+      Hash: 747eb60a2276a9a93ed6b19c9de94353
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ObjectTransform
   - hash:
       serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
@@ -617,6 +631,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Gvr.Internal
     className: EmulatorManager
+  - hash:
+      serializedVersion: 2
+      Hash: e129029ac55755e5b700db279d0fb897
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LerpBalon
   - hash:
       serializedVersion: 2
       Hash: 6939772cb3ce775a8e8d99f332534491
@@ -685,6 +705,12 @@ ScriptsOnlyBuild:
     className: GVRButton
   - hash:
       serializedVersion: 2
+      Hash: e6bb8168cccffdd64029eccc8b4cf9b7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LerpOriginal
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -707,6 +733,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GvrPointerGraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: df151cefd8d20463851ec6ec920ed909
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChangeScene
   - hash:
       serializedVersion: 2
       Hash: df64ad7cdad89053ed97218d03e92c1f
@@ -767,12 +799,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
-  - hash:
-      serializedVersion: 2
-      Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: EventTrigger
   - hash:
       serializedVersion: 2
       Hash: 5dea360fb0b147724ac344e6f399c2f3
@@ -877,5 +903,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Scenes/labimportsonrasi.unity
+  - Assets/Scenes/deney2.unity
   playerPath: C:/Users/zanal/Desktop/labogustest5.apk

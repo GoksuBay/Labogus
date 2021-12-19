@@ -7,11 +7,14 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/labv2.unity
-    guid: 937a3707c494eb943993dc4564d48a21
-  - enabled: 1
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/labimportsonrasi.unity
     guid: 02afc6b5a6865194a872258b045ea429
+  - enabled: 1
+    path: Assets/Scenes/deney2.unity
+    guid: b21ea881466946844b26f3f206d3afde
   m_configObjects: {}
