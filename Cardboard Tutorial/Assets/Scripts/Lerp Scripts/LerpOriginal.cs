@@ -6,13 +6,14 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class LerpOriginal : MonoBehaviour
 {
-    [SerializeField] float timer;
+   [SerializeField] float timer;
 
     //Transform, yani animasyon tamamlanma süresi totalTime oluyor.
     [SerializeField] public float totalTime = 2;
 
     [SerializeField] private Transform startTransform = null, endTransform = null;
      private bool flag = false;
+     private bool checkAnimation = false;
 
     //lerpValue = 0 olduğunda başlangıç pozisyonu, lerpValue = 1 olduğunda bitiş pozisyonu oluyor.
     [SerializeField] [Range(0f, 1f)] private float lerpValue = 0;
@@ -29,14 +30,15 @@ public class LerpOriginal : MonoBehaviour
     public void Update()
     {
 
-        
+
 
     if (flag == true){
+
 
         transform.position = Vector3.Lerp(startTransform.position, endTransform.position, lerpValue);
         transform.rotation = Quaternion.Lerp(startTransform.rotation, endTransform.rotation, lerpValue);
         transform.localScale = Vector3.Lerp(startTransform.localScale, endTransform.localScale, lerpValue);
-       
+
 
         //lerpValue max değeri olan 1'e ulaştıktan sonra, timer'ın değeri arkaplanda artmaya devam etmesin diye 100'e eşitliyoruz.
         //arkaplanda boşuna çalışmaması için yaptım.
@@ -44,6 +46,12 @@ public class LerpOriginal : MonoBehaviour
         {
             timer += Time.deltaTime;
             lerpValue = timer/totalTime;
+        }
+
+        else if (lerpValue >= 1 && !checkAnimation){
+            lerpValue = 0;
+            timer = 0;
+            checkAnimation = true;
         }
         else
         {
@@ -53,7 +61,7 @@ public class LerpOriginal : MonoBehaviour
     if(timer >=100)
     {
         flag = false;
-        
+
     }
 }
     }
@@ -66,4 +74,4 @@ public class LerpOriginal : MonoBehaviour
     }
 
 
-    }
+}
