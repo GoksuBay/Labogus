@@ -12,6 +12,8 @@ TagManager:
   - ChangeScene
   - lerporiginal
   - Beherbalon
+  - Turnusol
+  - Element
   layers:
   - Default
   - TransparentFX

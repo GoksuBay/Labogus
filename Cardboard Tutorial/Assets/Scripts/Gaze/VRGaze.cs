@@ -79,6 +79,18 @@ public class VRGaze : MonoBehaviour
                 gvrStatus = false;
             }
 
+            if(imgGaze.fillAmount == 1 && _hit.transform.CompareTag("Turnusol") && gvrStatus)
+            {
+                _hit.transform.gameObject.GetComponent<Turnusol>().Lerper();
+                gvrStatus = false;
+            }
+
+            if(imgGaze.fillAmount == 1 && _hit.transform.CompareTag("Element") && gvrStatus)
+            {
+                _hit.transform.gameObject.GetComponent<Batir>().Lerper();
+                gvrStatus = false;
+            }
+
         }
     }
 

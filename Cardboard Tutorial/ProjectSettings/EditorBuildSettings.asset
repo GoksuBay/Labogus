@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/deney2.unity
     guid: b21ea881466946844b26f3f206d3afde
+  - enabled: 1
+    path: Assets/Scenes/startMenu.unity
+    guid: d4156c9edb33a7c43995e2f4fc8b80f6
+  - enabled: 1
+    path: Assets/Scenes/deney1.unity
+    guid: e054d9cb4d434b24ca720022e1f04ff2
   m_configObjects: {}

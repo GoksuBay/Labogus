@@ -763,6 +763,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6563547197606441324, guid: 57de3b82b9121ff4d843d965cdce5fc6,
         type: 3}
+      propertyPath: scene
+      value: deney2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563547197606441324, guid: 57de3b82b9121ff4d843d965cdce5fc6,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 2022484299}
@@ -2998,7 +3003,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144615490}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25, y: -0.32, z: 1.04}
+  m_LocalPosition: {x: -0.25, y: 0.89, z: 1.04}
   m_LocalScale: {x: 0.74862, y: 0.74862, z: 0.74862}
   m_Children:
   - {fileID: 1217545112}
@@ -4163,6 +4168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scene3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563547197606441324, guid: 57de3b82b9121ff4d843d965cdce5fc6,
+        type: 3}
+      propertyPath: scene
+      value: deney3
       objectReference: {fileID: 0}
     - target: {fileID: 6563547197606441324, guid: 57de3b82b9121ff4d843d965cdce5fc6,
         type: 3}
@@ -5390,6 +5400,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scene1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563547197606441321, guid: 57de3b82b9121ff4d843d965cdce5fc6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1373c005cb331db42b5f52e43ae8867d, type: 2}
+    - target: {fileID: 6563547197606441324, guid: 57de3b82b9121ff4d843d965cdce5fc6,
+        type: 3}
+      propertyPath: scene
+      value: deney1
       objectReference: {fileID: 0}
     - target: {fileID: 6563547197606441324, guid: 57de3b82b9121ff4d843d965cdce5fc6,
         type: 3}
