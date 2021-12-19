@@ -61,6 +61,12 @@ public class VRGaze : MonoBehaviour
                 _hit.transform.gameObject.GetComponent<AllLerpTestClass>().Lerper();
                 gvrStatus = false;
             }
+
+            if(imgGaze.fillAmount == 1 && _hit.transform.CompareTag("ChangeScene") && gvrStatus)
+            {
+                _hit.transform.gameObject.GetComponent<ChangeScene>().SceneChange();
+                gvrStatus = false;
+            }
         }
     }
 

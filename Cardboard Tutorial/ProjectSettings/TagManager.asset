@@ -9,6 +9,7 @@ TagManager:
   - Obje
   - Beher
   - Lerp
+  - ChangeScene
   layers:
   - Default
   - TransparentFX

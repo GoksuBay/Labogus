@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class AllLerpTestClass : MonoBehaviour
 {
     [SerializeField] float timer;
