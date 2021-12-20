@@ -91,6 +91,12 @@ public class VRGaze : MonoBehaviour
                 gvrStatus = false;
             }
 
+            if(imgGaze.fillAmount == 1 && _hit.transform.CompareTag("AtesLerp") && gvrStatus)
+            {
+                _hit.transform.gameObject.GetComponent<AtesliLerp>().Lerper();
+                gvrStatus = false;
+            }
+
         }
     }
 

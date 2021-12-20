@@ -14,6 +14,12 @@ TagManager:
   - Beherbalon
   - Turnusol
   - Element
+  - ilk
+  - kirmizi
+  - sari
+  - yesil
+  - mor
+  - AtesLerp
   layers:
   - Default
   - TransparentFX

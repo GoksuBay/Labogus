@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/BuildScenes/deney3.unity
+- path: Assets/Scenes/BuildScenes/deney4.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
