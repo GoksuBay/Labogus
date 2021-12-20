@@ -12,21 +12,21 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/labimportsonrasi.unity
+    path: Assets/Scenes/OtherScenese/labimportsonrasi.unity
     guid: 02afc6b5a6865194a872258b045ea429
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/startMenu.unity
+    path: Assets/Scenes/BuildScenes/startMenu.unity
     guid: d4156c9edb33a7c43995e2f4fc8b80f6
   - enabled: 1
-    path: Assets/Scenes/deney1.unity
+    path: Assets/Scenes/BuildScenes/deney1.unity
     guid: e054d9cb4d434b24ca720022e1f04ff2
   - enabled: 1
-    path: Assets/Scenes/deney2.unity
+    path: Assets/Scenes/BuildScenes/deney2.unity
     guid: 11f433d55b0f9824288b21cb7cc8737c
   - enabled: 1
-    path: Assets/Scenes/deney3.unity
+    path: Assets/Scenes/BuildScenes/deney3.unity
     guid: 26e824d953dc7414f96b9985a147f926
   m_configObjects: {}
