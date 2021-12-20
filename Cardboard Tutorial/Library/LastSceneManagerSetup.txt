@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/deney3.unity
+- path: Assets/Scenes/startMenu.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
